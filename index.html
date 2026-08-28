@@ -420,20 +420,20 @@
         <p>✦ <span data-lang="en">Every consultation begins with listening. I take time to understand your situation before offering direction — because aligned action creates lasting results.</span><span data-lang="de">Jede Beratung beginnt mit Zuhören. Ich nehme mir Zeit, Ihre Situation zu verstehen, bevor ich Empfehlungen gebe.</span><span data-lang="hi">हर परामर्श सुनने से शुरू होता है। मैं दिशा देने से पहले आपकी स्थिति को समझने में समय लेती हूं।</span><span data-lang="ml">ഓരോ കൺസൾട്ടേഷനും ശ്രവണത്തിൽ നിന്ന് ആരംഭിക്കുന്നു. ദിശ നൽകുന്നതിന് മുമ്പ് നിങ്ങളുടെ സ്ഥിതി മനസ്സിലാക്കാൻ ഞാൻ സമയമെടുക്കുന്നു — കാരണം യോജിച്ച പ്രവർത്തനം ശാശ്വതമായ ഫലങ്ങൾ സൃഷ്ടിക്കുന്നു.</span></p>
       </div>
     </div>
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <form class="contact-form" action="https://formspree.io/f/xrpggoyv" method="POST" onsubmit="handleSubmit(event)">
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Name</label>
-          <input class="form-input" type="text" placeholder="Your name">
+          <input class="form-input" type="text" name="name" placeholder="Your name">
         </div>
         <div class="form-group">
           <label class="form-label">Email</label>
-          <input class="form-input" type="email" placeholder="your@email.com">
+          <input class="form-input" type="email" name="email" placeholder="your@email.com">
         </div>
       </div>
       <div class="form-group">
         <label class="form-label">I am reaching out about</label>
-        <select class="form-select form-input">
+        <select class="form-select form-input" name="service">
           <option value="">Select a service...</option>
           <option>Property Management</option>
           <option>Airbnb & Short-Term Rentals</option>
@@ -454,6 +454,7 @@
         <span data-lang="hi">संदेश भेजें</span>
         <span data-lang="ml">സന്ദേശം അയക്കുക</span>
       </button>
+      <p class="form-status" role="status" aria-live="polite" style="font-size:0.85rem;min-height:1.2em;margin:2px 0 0"></p>
     </form>
   </div>
 </section>

@@ -2,8 +2,10 @@ let currentLang = 'en';
 
 function setLang(lang) {
   currentLang = lang;
+  try { localStorage.setItem('shaliniLang', lang); } catch(e) {}
   document.querySelectorAll('[data-lang]').forEach(el => {
-    el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+    const active = el.dataset.lang === lang;
+    el.style.display = active ? (el.classList.contains('lang-inline') ? 'inline' : 'block') : 'none';
   });
   document.querySelectorAll('.lang-btn').forEach(btn => {
     const t = btn.textContent.trim();
@@ -13,6 +15,14 @@ function setLang(lang) {
       (lang==='hi' && t.includes('हि')) ||
       (lang==='ml' && t.includes('മല'))
     );
+  });
+  document.querySelectorAll('.i18n-placeholder').forEach(el => {
+    const ph = el.getAttribute('data-ph-' + lang) || el.getAttribute('data-ph-en');
+    if (ph !== null) el.setAttribute('placeholder', ph);
+  });
+  document.querySelectorAll('.i18n-option').forEach(opt => {
+    const txt = opt.getAttribute('data-' + lang) || opt.getAttribute('data-en');
+    if (txt !== null) opt.textContent = txt;
   });
 }
 
@@ -119,4 +129,6 @@ document.querySelectorAll('.service-card,.shop-card,.testimonial-card,.about-vis
   observer.observe(el);
 });
 
-setLang('en');
+let savedLang = 'en';
+try { savedLang = localStorage.getItem('shaliniLang') || 'en'; } catch(e) {}
+setLang(savedLang);

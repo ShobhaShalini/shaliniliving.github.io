@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum | Shalini Living</title>
+<meta name="description" content="Impressum / Legal Notice — Shalini Living, Shalini Property Advisory, Nürnberg.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAF6EE">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .legal-page{max-width:760px;margin:0 auto;padding:140px 5vw 100px}
+  .legal-header{margin-bottom:2.5rem}
+  .legal-back{font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--saffron)}
+  .legal-back:hover{color:var(--coral)}
+  .legal-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text-dark);margin:0.6rem 0 0.3rem}
+  .lang-toggle{display:flex;gap:8px;margin-top:1rem}
+  .lang-toggle button{font-family:'Jost',sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:8px 18px;border:1.5px solid var(--saffron);background:transparent;color:var(--saffron);cursor:pointer;border-radius:2px}
+  .lang-toggle button.active{background:var(--saffron);color:#fff}
+  .legal-block h2{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:var(--text-dark);margin:2.2rem 0 0.6rem}
+  .legal-block h1.legal-note{font-family:'Jost',sans-serif;font-size:0.8rem;font-weight:400;color:var(--text-muted);font-style:italic;margin:0 0 1.5rem}
+  .legal-block p{font-family:'Jost',sans-serif;font-size:0.95rem;line-height:1.7;color:var(--text-body);margin:0 0 1rem}
+  .legal-block address{font-style:normal}
+  .legal-block a{color:var(--saffron)}
+  .legal-block a:hover{color:var(--coral)}
+  .legal-footer-links{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;gap:1.5rem;font-size:0.85rem}
+</style>
+</head>
+<body>
+
+<div class="footer-stripe"></div>
+
+<main class="legal-page">
+  <div class="legal-header">
+    <a href="index.html" class="legal-back">← Back to Home</a>
+    <h1 class="legal-title">Impressum</h1>
+    <div class="lang-toggle">
+      <button id="btn-de" class="active" onclick="showLegalLang('de')">Deutsch</button>
+      <button id="btn-en" onclick="showLegalLang('en')">English</button>
+    </div>
+  </div>
+
+  <div id="legal-de" class="legal-block">
+    <p>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
+
+    <address>
+      Shobha Shalini<br>
+      Shalini Property Advisory<br>
+      Stabiusstraße 10<br>
+      90489 Nürnberg<br>
+      Deutschland
+    </address>
+
+    <h2>Kontakt</h2>
+    <p>Telefon: +49 176 76755565<br>
+    E-Mail: <a href="mailto:shobha@shaliniliving.de">shobha@shaliniliving.de</a></p>
+
+    <h2>Umsatzsteuer</h2>
+    <p>Gemäß § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+
+    <h2>Angemeldete Tätigkeit</h2>
+    <p>Vermittlung von Miet-Wohnräumen (keine Tätigkeit nach § 34c GewO), Koordination von Instandhaltungsmaßnahmen. Gewerbe angemeldet bei der Stadt Nürnberg am 14.08.2026.</p>
+
+    <h2>Verbraucherstreitbeilegung</h2>
+    <p>Ich bin nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieterin bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>
+
+    <h2>Haftung für Links</h2>
+    <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Die durch mich erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen meiner schriftlichen Zustimmung.</p>
+  </div>
+
+  <div id="legal-en" class="legal-block" style="display:none">
+    <h1 class="legal-note">This is a courtesy English translation. The German version is the legally binding version under German law.</h1>
+    <p>Information pursuant to § 5 DDG (German Digital Services Act)</p>
+
+    <address>
+      Shobha Shalini<br>
+      Shalini Property Advisory<br>
+      Stabiusstraße 10<br>
+      90489 Nürnberg<br>
+      Germany
+    </address>
+
+    <h2>Contact</h2>
+    <p>Phone: +49 176 76755565<br>
+    Email: <a href="mailto:shobha@shaliniliving.de">shobha@shaliniliving.de</a></p>
+
+    <h2>VAT</h2>
+    <p>No VAT is charged, in accordance with § 19 (1) of the German VAT Act (small business regulation / Kleinunternehmerregelung).</p>
+
+    <h2>Registered activity</h2>
+    <p>Mediation of residential rental properties (not an activity under § 34c of the German Trade Regulation Act), coordination of maintenance measures. Trade registered with the City of Nürnberg on 14 August 2026.</p>
+
+    <h2>Consumer dispute resolution</h2>
+    <p>I am not obliged and not willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+
+    <h2>Liability for content</h2>
+    <p>The content of this website has been created with the greatest care. However, no guarantee can be given for the accuracy, completeness, or timeliness of the content. As a service provider, I am responsible for my own content on these pages in accordance with general law. However, I am not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general law remain unaffected.</p>
+
+    <h2>Liability for links</h2>
+    <p>This website contains links to external third-party websites over whose content I have no influence. Therefore, I cannot assume any liability for this external content. The respective provider or operator of the linked pages is always responsible for its content. Should I become aware of any legal violations, I will remove such links immediately.</p>
+
+    <h2>Copyright</h2>
+    <p>The content and works created by me on this website are subject to German copyright law. Reproduction, editing, distribution, and any kind of use outside the limits of copyright law require my written consent.</p>
+  </div>
+
+  <div class="legal-footer-links">
+    <a href="datenschutz.html">Datenschutz / Privacy Policy</a>
+    <a href="index.html">Home</a>
+  </div>
+</main>
+
+<script>
+function showLegalLang(lang){
+  document.getElementById('legal-de').style.display = lang === 'de' ? 'block' : 'none';
+  document.getElementById('legal-en').style.display = lang === 'en' ? 'block' : 'none';
+  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+</body>
+</html>

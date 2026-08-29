@@ -84,7 +84,7 @@
   --ivory-mid:    #F2EBD9;
   --ivory-deep:   #E8DDCA;
   --ivory-dark:   #DDD0B8;
-  --saffron:      #C8780A;
+  --saffron:      #D9831F;
   --saffron-mid:  #E09020;
   --saffron-light:#F0BB60;
   --saffron-pale: #FDF0D5;
@@ -520,6 +520,8 @@ footer{
   flex-wrap:wrap;gap:2rem;
 }
 .footer-brand{}
+.footer-brand-row{display:flex;align-items:center;gap:12px}
+.footer-brand-icon{width:34px;height:auto;flex-shrink:0}
 .footer-name{
   font-family:'Cormorant Garamond',serif;
   font-size:1.3rem;color:var(--saffron);letter-spacing:0.03em;font-weight:400;
@@ -548,6 +550,7 @@ footer{
 /* ── LANG SYSTEM ── */
 [data-lang]{display:none}
 [data-lang="en"]{display:block}
+.svg-symbol-defs{position:absolute;width:0;height:0;overflow:hidden}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}

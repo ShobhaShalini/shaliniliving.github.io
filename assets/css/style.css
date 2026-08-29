@@ -547,6 +547,8 @@ footer{
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;
 }
 
+.footer-legal-links a{color:var(--text-light)}
+.footer-legal-links a:hover{color:var(--saffron)}
 /* ── LANG SYSTEM ── */
 [data-lang]{display:none}
 [data-lang="en"]{display:block}

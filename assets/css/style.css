@@ -577,3 +577,13 @@ h1.hero-title{animation-delay:0.2s}
   .hero-circle-1,.hero-circle-2{display:none}
   .footer-inner{flex-direction:column}
 }
+
+/* ── NAV: narrow-mobile lang-switch fix (readability-first) ── */
+@media(max-width:420px){
+  .lang-switch{gap:2px}
+  .lang-btn{font-size:0.58rem;letter-spacing:0.04em;padding:2px 5px}
+}
+@media(max-width:365px){
+  .lang-switch{gap:1px}
+  .lang-btn{font-size:0.5rem;letter-spacing:0.01em;padding:2px 4px}
+}
